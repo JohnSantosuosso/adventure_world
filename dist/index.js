@@ -9,7 +9,7 @@ const inquirer_1 = __importDefault(require("inquirer"));
 let todos = [
     new todoItem_1.TodoItem(1, "Learn TypeScript"), new todoItem_1.TodoItem(2, "Play Sun Haven"), new todoItem_1.TodoItem(3, "Create Pixel Art for Game"), new todoItem_1.TodoItem(4, "Finish Loki", true)
 ];
-let list = new todoList_1.TodoList("Jonathan", todos);
+let list = new todoList_1.TodoList("John", todos);
 function displayTodoList() {
     console.log(`${list.userName}'s Todo List ` + `(${list.getItemCounts().incomplete} items to do)`);
     list.getTodoItems(true).forEach(item => item.printDetails());
